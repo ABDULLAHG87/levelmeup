@@ -33,12 +33,12 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['SECRET_KEY'] = b'8\xc6\xef\xd8\x82\xf86\xe5R\x10\xb3\x9f\xb8k\xf0{\x88-\xc4\xde\x8eQ\x05;'
 basedir = os.path.abspath(os.path.dirname(__file__))
 # Set the path to the SQLite database file
-#db_path = os.path.join(basedir, 'levelmeup.db')
+db_path = os.path.join(basedir, 'levelmeup.db')
 
 # Configure the Flask application to use SQLite
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + db_path
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + db_path
 # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:abdul4prof@localhost/secompanion'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:abdul4prof@localhost/secompanion'
 app.config['SQLALCHEMY_TRACK MODIFICATIONS'] = False
 app.config['SESSION_TYPE'] = 'filesystem'
 
