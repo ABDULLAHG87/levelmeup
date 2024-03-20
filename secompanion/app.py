@@ -3,7 +3,7 @@ import random
 from flask import (Flask, render_template, redirect, url_for, flash,
                    request, session)
 from flask_login import current_user, login_required
-from flask_session import Session
+#from flask_session import Session
 from flask_login import LoginManager, login_user, UserMixin
 from secompanion.apps.forms import (LoginForm, RegistrationForm, ProfileForm,
                                     ForgotPasswordForm)
